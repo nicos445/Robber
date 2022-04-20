@@ -6,6 +6,7 @@ public class Collectible : RoadElement
     [SerializeField] private GameObject mRenderer;
 
 
+
     public void Collect()
     {
         Activate(false);

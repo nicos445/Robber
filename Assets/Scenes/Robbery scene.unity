@@ -5000,9 +5000,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2392b9d907f40c44956f1aaa6235ccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraShakeDuration: 0.3
+  cameraShakeDuration: 0.4
   cameraShakeDecreaseFactor: 3.05
-  cameraShakeAmount: 0.1
+  cameraShakeAmount: 0.2
 --- !u!1001 &8811115003627616075
 PrefabInstance:
   m_ObjectHideFlags: 0
