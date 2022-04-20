@@ -4996,7 +4996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5472616433121549498, guid: 45ad8aa4246f60d4d9fcd694abdf2756, type: 3}
       propertyPath: m_Name
-      value: Iron
+      value: Burner
       objectReference: {fileID: 0}
     - target: {fileID: 5472616433121549502, guid: 45ad8aa4246f60d4d9fcd694abdf2756, type: 3}
       propertyPath: m_Enabled
@@ -5089,6 +5089,18 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   triggerTag: 2
+--- !u!114 &7196836645382154301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363692154808890654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ff12612a9164543995a908946b8f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2489244508071158878
 PrefabInstance:
   m_ObjectHideFlags: 0

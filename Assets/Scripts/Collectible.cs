@@ -1,25 +1,20 @@
 ﻿using UnityEngine;
 
-public class Collectible : MonoBehaviour
+public class Collectible : RoadElement
 {
     [SerializeField] private GameObject particles;
     [SerializeField] private GameObject mRenderer;
 
-    private Vector3 positionAtStart;
 
-    private void Start()
-    {
-        positionAtStart = transform.position;
-    }
     public void Collect()
     {
         Activate(false);
     }
 
-    public void Reset()
+    public override void Reset()
     {
+        base.Reset();
         Activate(true);
-        transform.position = positionAtStart;
     }
 
     private void Activate(bool collect)
