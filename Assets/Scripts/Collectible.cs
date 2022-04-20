@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
-
     [SerializeField] private GameObject particles;
     [SerializeField] private GameObject mRenderer;
-    private void OnTriggerEnter(Collider other)
+    public void Collect()
     {
-        if (other.CompareTag(Tags.Player))
-        {
-            mRenderer.SetActive(false);
-            particles.SetActive(true);
-            //Destroy(gameObject);
-        }
+        mRenderer.SetActive(false);
+        particles.SetActive(true);
     }
 }

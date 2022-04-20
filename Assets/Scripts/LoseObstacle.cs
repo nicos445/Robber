@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class LoseObstacle : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    public void Lose()
     {
-        if (other.CompareTag(Tags.Player))
-        {
-            GameManager.Instance.EndGame(false);
-        }
+        GameManager.Instance.EndGame(false);
     }
 }

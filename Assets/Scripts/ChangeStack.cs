@@ -3,11 +3,8 @@
 public class ChangeStack : MonoBehaviour
 {
     [SerializeField] private bool growStack;
-    private void OnTriggerEnter(Collider other)
+    public void Change()
     {
-        if (other.CompareTag(Tags.Player))
-        {
-            GameManager.Instance.ChangeStack(growStack);
-        }
+        GameManager.Instance.ChangeStack(growStack);
     }
 }

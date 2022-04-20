@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AutoTranslate autoTranslate;
     [SerializeField] private Robber robber;
     [SerializeField] private CharacterSlideControls characterSlideControls;
+    [SerializeField] private CameraShake cameraShake;
 
 
     [Range(0f, 1.5f)]
@@ -66,6 +67,11 @@ public class GameManager : MonoBehaviour
         uiManager.OnDiamond();
 
         robber.IncreaseOrDecreaseBag(increase);
+
+        if (!increase)
+        {
+            cameraShake.Shake();
+        }
     }
 
 
