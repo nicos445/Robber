@@ -63,10 +63,18 @@ public class GameManager : MonoBehaviour
     //Makes UI updating
     public void ChangeStack(bool increase)
     {
-        diamondCounter++;
-        uiManager.OnDiamond();
+        if (increase)
+        {
+            diamondCounter++;
+        }
+        else
+        {
+            diamondCounter /= 2;
+        }
 
-        robber.IncreaseOrDecreaseBag(increase);
+        uiManager.SetDiamondCounter(diamondCounter);
+
+        robber.IncreaseOrDecreaseBag(increase, diamondCounter);
 
         if (!increase)
         {

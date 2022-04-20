@@ -9,24 +9,19 @@ public class Robber : MonoBehaviour
     [SerializeField] private Animation bagHitAnimation;
 
     private Vector3 scaleAtStart;
-    private int nbDiamonds = 0;
 
     void Start()
     {
         scaleAtStart = bag.localScale;
     }
 
-    public void IncreaseOrDecreaseBag(bool increase)
+    public void IncreaseOrDecreaseBag(bool increase, int nbDiamonds)
     {
-        if (increase)
+        if (!increase)
         {
-            nbDiamonds++;
-        }
-        else
-        {
-            nbDiamonds /= 2;
             GetHit();
         }
+
         bag.localScale = scaleAtStart * (1 + nbDiamonds * 0.08f);
     }
 
