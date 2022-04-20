@@ -121,7 +121,7 @@ Transform:
   - {fileID: 814740220856998590}
   m_Father: {fileID: 7151904242123577723}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -8.052436, y: 126.79732, z: 9.930365}
+  m_LocalEulerAnglesHint: {x: -6.0944986, y: 127.06316, z: 7.453418}
 --- !u!33 &3482092553337617491
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -584,8 +584,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2950114223175297194}
-        m_TargetAssemblyTypeName: PlayAnim, Assembly-CSharp
-        m_MethodName: PlayAnimation
+        m_TargetAssemblyTypeName: AnimationManager, Assembly-CSharp
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

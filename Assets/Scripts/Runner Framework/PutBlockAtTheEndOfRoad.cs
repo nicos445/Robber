@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
-public class DisableBlockOnTrigger : MonoBehaviour
+public class PutBlockAtTheEndOfRoad : MonoBehaviour
 {
-    [SerializeField] private Transform spawnPosition;
     [SerializeField] private Transform lastBlock;
     public void Disable(Collider other)
     {

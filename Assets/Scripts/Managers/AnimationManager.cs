@@ -8,12 +8,12 @@ public class AnimationManager : MonoBehaviour
         anim = GetComponent<Animation>();
     }
 
-    public void PlayAnimation()
+    public void Play()
     {
         anim.Play();
     }
 
-    public void RewindAnim()
+    public void Rewind()
     {
         anim.Rewind();
         anim.Play();

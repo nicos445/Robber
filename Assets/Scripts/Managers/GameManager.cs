@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private UImanager uiManager;
+    [SerializeField] private GameObject roadBlockPrefab;
     [SerializeField] private AutoTranslate autoTranslate;
     [SerializeField] private Robber robber;
     [SerializeField] private CharacterSlideControls characterSlideControls;
@@ -15,30 +16,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float speed;
 
     public static GameManager Instance => instance;
-
     private static GameManager instance;
 
 
     private Vector3 direction = -Vector3.forward;
 
     private int diamondCounter = 0;
-    private bool hasWon = false;
-
-    private const int DISTANCE_UNIT = 12;
-
-
-    public float Speed
-    {
-        get
-        {
-            return speed;
-        }
-    }
-
-    public Vector3 Velocity()
-    {
-        return speed * DISTANCE_UNIT * direction;
-    }
 
 
 
@@ -51,17 +34,19 @@ public class GameManager : MonoBehaviour
         }
 
         instance = this;
+
         Application.targetFrameRate = 60;
         Time.timeScale = 0;
-
-
         autoTranslate.velocity = Velocity();
     }
 
+    public Vector3 Velocity()
+    {
+        return speed * roadBlockPrefab.transform.localScale.z * direction;
+    }
 
 
-    //Makes UI updating
-    public void ChangeStack(bool increase)
+    public void ModifyStack(bool increase)
     {
         if (increase)
         {
@@ -83,24 +68,10 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void EndGame(bool win)
+    public void EndGame()
     {
         characterSlideControls.enabled = false;
-        hasWon = win;
-        if (!win)
-        {
-            //Invoke("Invoke_EndCanvas", 0.5f);
-            Invoke("Invoke_EndCanvas", 0);
-        }
-        else
-        {
-            Invoke_EndCanvas();
-        }
-    }
-
-    private void Invoke_EndCanvas()
-    {
-        uiManager.EndGame(hasWon);
+        uiManager.EndGame();
         Time.timeScale = 0;
     }
 

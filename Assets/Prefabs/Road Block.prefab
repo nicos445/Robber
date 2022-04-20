@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23641525838051126}
   - component: {fileID: 6861044261521795174}
   m_Layer: 9
-  m_Name: Plane Block
+  m_Name: Road Block
   m_TagString: RoadBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

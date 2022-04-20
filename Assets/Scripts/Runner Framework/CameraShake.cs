@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    // used fields
-    private Camera mainCamera;
     [SerializeField] private float cameraShakeDuration = 0.5f;
     [SerializeField] private float cameraShakeDecreaseFactor = 1f;
     [SerializeField] private float cameraShakeAmount = 1f;
+
+    private Camera mainCamera;
 
     void Start()
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RoadManager : MonoBehaviour
+public class RewindManager : MonoBehaviour
 {
     [SerializeField] Transform level;
 
@@ -17,7 +17,7 @@ public class RoadManager : MonoBehaviour
     {
         foreach (AnimationManager animationManager in animationManagers)
         {
-            animationManager.RewindAnim();
+            animationManager.Rewind();
         }
 
         foreach (RoadElement roadElement in roadElements)
