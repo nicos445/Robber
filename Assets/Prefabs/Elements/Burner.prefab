@@ -5049,58 +5049,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5472616433121549498, guid: 45ad8aa4246f60d4d9fcd694abdf2756, type: 3}
   m_PrefabInstance: {fileID: 1414908646822652324}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7196836645382154301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6363692154808890654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48ff12612a9164543995a908946b8f91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8348911408471552699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6363692154808890654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db900b8f5bf09b1468d20cffcae96395, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6363692154808890652}
-        m_TargetAssemblyTypeName: ChangeStack, Assembly-CSharp
-        m_MethodName: Change
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5772563884250333487}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  triggerTag: 2
 --- !u!82 &3437260307756452559
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5113,7 +5061,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e68a631242353d74688dacc6c1e3732f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5197,6 +5145,58 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7196836645382154301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363692154808890654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ff12612a9164543995a908946b8f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8348911408471552699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363692154808890654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db900b8f5bf09b1468d20cffcae96395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6363692154808890652}
+        m_TargetAssemblyTypeName: ChangeStack, Assembly-CSharp
+        m_MethodName: Change
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5772563884250333487}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  triggerTag: 2
 --- !u!1001 &2489244508071158878
 PrefabInstance:
   m_ObjectHideFlags: 0

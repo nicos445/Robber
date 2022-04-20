@@ -7,6 +7,7 @@ public class Robber : MonoBehaviour
     [SerializeField] private Transform bag;
     [SerializeField] private Animation hitAnimation;
     [SerializeField] private Animation bagHitAnimation;
+    [SerializeField] private Animation loseHitAnimation;
 
     private Vector3 scaleAtStart;
 
@@ -29,5 +30,7 @@ public class Robber : MonoBehaviour
     {
         hitAnimation.Play();
         bagHitAnimation.Play();
+        loseHitAnimation.transform.position = bagHitAnimation.transform.position;
+        loseHitAnimation.Play();
     }
 }
