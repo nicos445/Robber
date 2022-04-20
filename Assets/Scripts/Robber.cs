@@ -28,7 +28,7 @@ public class Robber : MonoBehaviour
     {
         hitAnimation.Play();
         bagHitAnimation.Play();
-        loseHitAnimation.transform.position = bagHitAnimation.transform.position;
+        loseHitAnimation.transform.parent.position = bagHitAnimation.transform.position;
         loseHitAnimation.Play();
     }
 }

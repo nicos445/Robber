@@ -222,8 +222,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 5960006054157091242}
-        m_TargetAssemblyTypeName: PlayAnim, Assembly-CSharp
-        m_MethodName: PlayAnimation
+        m_TargetAssemblyTypeName: AnimationManager, Assembly-CSharp
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
