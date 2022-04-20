@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7977293110166961365}
   - component: {fileID: 3330946504125982564}
   m_Layer: 0
-  m_Name: Jewel
+  m_Name: Diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
