@@ -2,7 +2,7 @@
 
 public class AutoTranslate : MonoBehaviour
 {
-    public Vector3 velocity { get; set; }
+    public Vector3 velocity { get; set; } = -Vector3.forward;
 
     void Update()
     {
