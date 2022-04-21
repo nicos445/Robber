@@ -277,11 +277,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213276835}
   m_CullTransparentMesh: 0
---- !u!1 &684004416 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4356237313893503137, guid: 5f4efcc650772ab428fc80920b6ff275, type: 3}
-  m_PrefabInstance: {fileID: 5058431509981692353}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &691546210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,15 +1932,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.27490476
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4356237313893503140, guid: 5f4efcc650772ab428fc80920b6ff275, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f4efcc650772ab428fc80920b6ff275, type: 3}
 --- !u!114 &5058431509981692354 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4356237313812720860, guid: 5f4efcc650772ab428fc80920b6ff275, type: 3}
   m_PrefabInstance: {fileID: 5058431509981692353}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684004416}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0591bc3375eb6dc4399d0f42b44c5164, type: 3}
@@ -1961,7 +1955,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2978485252091728622, guid: 5f4efcc650772ab428fc80920b6ff275, type: 3}
   m_PrefabInstance: {fileID: 5058431509981692353}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684004416}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1c95b9282af7a8418d4bebe4035ea7c, type: 3}
@@ -1983,20 +1977,6 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!136 &5058431509981692364
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684004416}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.67
-  m_Height: 5.56
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &8057706441873755503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2004,6 +1984,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1555403476664647559, guid: a53d62c4d9314e34fae1468047e4fcf3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1555403478139232633, guid: a53d62c4d9314e34fae1468047e4fcf3, type: 3}
       propertyPath: m_RootOrder
       value: 5
